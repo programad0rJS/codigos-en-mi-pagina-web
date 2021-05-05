@@ -1,0 +1,40 @@
+.form {
+    margin-bottom: 1rem;
+}
+.form__field{
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+    margin-bottom: 1rem;
+}
+.info{
+    display: flex;
+    align-items: center;
+}
+.info p {
+    margin: 0 1rem;
+} 
+ body {
+    margin: 0;
+    background-color: #ec407a;
+    font-family: sans-serif;
+    color: #fff;
+   user-select: none;    
+}
+img{
+    max-width: 100%;
+}
+.load-bar {
+    width: 50%;
+    background-color: #ccc;
+    height: 10px;
+    position: relative;
+    padding: 1rem 0;
+}
+.progress {
+    display: block;
+    background-color: royalblue;
+    height: 10px;
+    width: 0;
+}
+

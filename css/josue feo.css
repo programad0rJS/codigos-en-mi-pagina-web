@@ -1,0 +1,103 @@
+button {
+    background-color:purple;
+}
+body {
+    background: wheat;
+}
+h1 {
+    text-align: center;
+   
+}
+.carrusel {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+ 
+}
+
+
+.carrusel ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    max-width: 1000px;
+}
+.carrusel-fotos {
+    display: flex;
+    gap: 10px;
+    overflow: auto;
+}
+
+
+.carrusel-fotos img{
+    background: black;
+    border: 4px solid black;
+    width: 300px;
+    height: 200px;
+    object-fit: contain;
+} 
+
+.carrusel-menu{
+    display: none;
+}
+@media screen and (min-width:500px){
+    .carrusel-fotos{
+        overflow: hidden;
+    } 
+    .carrusel-fotos img{
+        width: 500px;
+        height: 400px;
+    }
+    .carrusel-menu{
+        display: block;
+    }
+    .carrusel-menu img{
+       box-sizing: border-box;
+        width: 50px;
+        height: 40px;
+        border: 10px solid black;
+    }
+    .carrusel-menu img:hover {
+        border:none;
+    }
+}
+
+
+  *{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+     box-sizing: border-box;
+}
+.social {
+    position: fixed; 
+    left: 0;
+    top: 0px;
+    z-index: 2000;
+} 
+.social ul {
+    list-style:none;
+}
+.social ul li a  {
+    display: inline-block;
+    color: #fff;
+    background: #000;
+    padding: 6px 6px ;
+    text-decoration: none;
+    -webkit-transition:all 500ms ease;
+    -o-transition:all 500ms ease ;
+    transition:all 500ms ease ;
+}
+.social ul li .icon-youtube{background:#3b5998;}
+.social ul li .icon-facebook{background: #00abf0;}
+.social ul li .icon-google{background:#d95232 ;}
+.social ul li .icon-twitter{background: #ae181f ;}
+.social ul li .icon-instagram{background:#666666 ;}
+
+
+.social ul li  a:hover {
+    padding: 10px 30px;
+    background: #000;
+}
+  

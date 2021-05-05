@@ -1,0 +1,44 @@
+ .gallery{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 10px;
+}
+.gallery__item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+}
+.red{
+    background: red;
+}
+.box {
+    margin: 300px;
+    height: 300px;
+    background-color:red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    color: white;
+}
+.box:hover {
+   background-color:violet;
+}
+.animate {
+    transition:background-color 3s;
+}
+.form {
+    width: 20%;
+    text-align: center;
+}
+.form__field {
+     width: 100%;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     margin-bottom: 1rem;
+}
+
+
+

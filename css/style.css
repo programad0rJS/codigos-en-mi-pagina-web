@@ -1,0 +1,144 @@
+*{
+    margin:0;
+    padding: 0;
+}
+@keyframes miAnimacion{
+     0% {
+         opacity: 1;
+        }
+     20%{
+        opacity: 1;
+    }
+    30%{
+        opacity: 0;
+    }
+
+    90%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+    }
+
+}
+@-webkit-keyframes miAnimacion{
+
+    0% {
+        opacity: 1;
+       }
+    50%{
+       opacity: 0;
+       }
+   100%{
+       opacity: 1;
+   }
+}
+@-moz-keyframes miAnimacion{
+    0% {
+        opacity: 1;
+       }
+    50%{
+       opacity: 0;
+       }
+   100%{
+       opacity: 1;
+   }
+}
+
+
+#fondo1{
+    position:absolute;
+    width: 100%;
+    height: 100vh;
+    background: url(daniel.jpg);
+    background-repeat: repeat-x;
+    animation:miAnimacion 10s linear 5s infinite;
+    -webkit-animation: miAnimacion 10s  linear 5s infinite;
+    -moz-animation: miAnimacion 10s  linear 5s infinite;   
+}
+
+#fondo2{
+    position:absolute;
+    width: 100%;
+    height: 100vh;
+    background: url(descarga.png);
+    background-size: cover;
+    animation:miAnimacion 10s linear 5s infinite;
+    -webkit-animation: miAnimacion 10s  linear 5s infinite;
+    -moz-animation: miAnimacion 10s  linear 5s infinite;   
+}
+#fondo3{
+    position:absolute;
+    width: 100%;
+    height: 100vh;
+    background: url(animales\ conejo.png);
+    background-size: cover;
+    animation:miAnimacion 10s linear 5s infinite;
+    -webkit-animation: miAnimacion 10s  linear 5s infinite;
+    -moz-animation: miAnimacion 10s  linear 5s infinite;   
+}
+#fondo4{
+    position:absolute;
+    width: 100%;
+    height: 100vh;
+    background: url(animales.png);
+    opacity: 2;
+    animation:miAnimacion 10s linear 5s infinite;
+    -webkit-animation: miAnimacion 10s  linear 5s infinite;
+    -moz-animation: miAnimacion 10s  linear 5s infinite;   
+    
+}
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style:none;
+    font-family: sans-serif;
+}
+header{
+    position: relative;
+    margin: 0 auto;
+    width: 1000px;
+    height: 150px;
+    background: silver;
+}
+#menutop{
+    position: relative;
+    bottom: 0;
+    width: 1000px;
+    height: 50px;
+    background: red;
+}
+.niveli{
+    float: left;
+    width: 19.2%;
+    text-align: center;
+    line-height: 50px;
+   border: 4px solid #fff;
+    background: linear-gradient(#900,#600); 
+}
+.niveli a{
+    color: #fff;
+}
+.niveli:hover{
+     background: purple;
+}
+.niveli2{
+    position: relative;
+    left:-4px;
+    width: 100%;
+    text-align: center;
+    border-top:4px solid #fff ;
+    border-left: 4px solid#fff;
+   border-right: 4px solid #fff;
+    background: silver;
+    color: black;
+}
+.niveli2:hover{
+    background: blue;
+    transition: .5s  ease-out;
+}
+#menutop ul li:hover ul{
+    display: block;
+}
